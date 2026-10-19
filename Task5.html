@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navratri Event Eligibility Checker</title>
+</head>
+<body>
+    <h2>Navratri Event Eligibility Checker</h2>
+
+    <script>
+       
+        let date = prompt("Enter event date:");
+
+        
+        date = Number(date);
+
+        
+        if (Number.isInteger(date) && date >= 11 && date <= 19) {
+
+            let result = "You are eligible to participate in Navratri event.";
+
+            alert(result);
+
+            document.write("<h2>Your Date: " + date + "</h2>");
+            document.write("<h2>" + result + "</h2>");
+
+        } else {
+
+            alert("You are not eligible to participate.");
+
+            document.write("<h3>Invalid date! Event runs from 11 to 19.</h3>");
+        }
+    </script>
+</body>
+</html>
